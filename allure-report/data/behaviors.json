@@ -1,0 +1,31 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Перейти на сайт и проверить корректность своего перехода на сайт",
+    "uid" : "6eb33e4961c2d2d2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626758801722,
+      "stop" : 1626758805562,
+      "duration" : 3840
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru",
+    "uid" : "98c92aa2fad08051",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1626758812065,
+      "stop" : 1626758817212,
+      "duration" : 5147
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

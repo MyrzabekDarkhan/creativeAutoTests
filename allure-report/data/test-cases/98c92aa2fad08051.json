@@ -1,0 +1,115 @@
+{
+  "uid" : "98c92aa2fad08051",
+  "name" : "Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru",
+  "fullName" : "test.TestActions.checkForContentInWebSite",
+  "historyId" : "3f2b69348f0bb7137059759f24a4a423",
+  "time" : {
+    "start" : 1626758812065,
+    "stop" : 1626758817212,
+    "duration" : 5147
+  },
+  "description" : "Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru",
+  "descriptionHtml" : "<p>Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "profileSetup",
+    "time" : {
+      "start" : 1626758809206,
+      "stop" : 1626758812058,
+      "duration" : 2852
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "reportReady",
+    "time" : {
+      "start" : 1626758817213,
+      "stop" : 1626758820914,
+      "duration" : 3701
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.TestActions"
+  }, {
+    "name" : "testClass",
+    "value" : "test.TestActions"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkForContentInWebSite"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "creativeAutoTests"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.TestActions"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-T2PM96F"
+  }, {
+    "name" : "thread",
+    "value" : "12952@DESKTOP-T2PM96F.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ {
+      "uid" : "9c894c86afa68ccc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626758608054,
+        "stop" : 1626758613436,
+        "duration" : 5382
+      }
+    }, {
+      "uid" : "17e7dc97ba045614",
+      "status" : "passed",
+      "time" : {
+        "start" : 1626758142778,
+        "stop" : 1626758148164,
+        "duration" : 5386
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "98c92aa2fad08051.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,97 @@
+{
+  "uid" : "578a94791e406c1d",
+  "name" : "Перейти на сайт и проверить корректность своего перехода на сайт",
+  "fullName" : "test.TestActions.checkIsCorrectWebsite",
+  "historyId" : "cb07d5adfa4ec380f149546e07702dd4",
+  "time" : {
+    "start" : 1626758619950,
+    "stop" : 1626758623587,
+    "duration" : 3637
+  },
+  "description" : "Перейти на сайт и проверить корректность своего перехода на сайт",
+  "descriptionHtml" : "<p>Перейти на сайт и проверить корректность своего перехода на сайт</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "profileSetup",
+    "time" : {
+      "start" : 1626758617110,
+      "stop" : 1626758619947,
+      "duration" : 2837
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "reportReady",
+    "time" : {
+      "start" : 1626758623588,
+      "stop" : 1626758627234,
+      "duration" : 3646
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.TestActions"
+  }, {
+    "name" : "testClass",
+    "value" : "test.TestActions"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkIsCorrectWebsite"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "creativeAutoTests"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.TestActions"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-T2PM96F"
+  }, {
+    "name" : "thread",
+    "value" : "3704@DESKTOP-T2PM96F.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "578a94791e406c1d.json",
+  "parameterValues" : [ ]
+}

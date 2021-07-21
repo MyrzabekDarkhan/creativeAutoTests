@@ -1,0 +1,99 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-T2PM96F",
+    "children" : [ {
+      "name" : "12952@DESKTOP-T2PM96F.main(1)",
+      "children" : [ {
+        "name" : "Перейти на сайт и проверить корректность своего перехода на сайт",
+        "uid" : "6eb33e4961c2d2d2",
+        "parentUid" : "de53de0249f3d4b7710e5a668dd76509",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626758801722,
+          "stop" : 1626758805562,
+          "duration" : 3840
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru",
+        "uid" : "98c92aa2fad08051",
+        "parentUid" : "de53de0249f3d4b7710e5a668dd76509",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626758812065,
+          "stop" : 1626758817212,
+          "duration" : 5147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de53de0249f3d4b7710e5a668dd76509"
+    }, {
+      "name" : "17372@DESKTOP-T2PM96F.main(1)",
+      "children" : [ {
+        "name" : "РџРµСЂРµР№С‚Рё РЅР° СЃР°Р№С‚ Рё РїСЂРѕРІРµСЂРёС‚СЊ РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ СЃРІРѕРµРіРѕ РїРµСЂРµС…РѕРґР° РЅР° СЃР°Р№С‚",
+        "uid" : "491f2235ffeb5ccf",
+        "parentUid" : "251fb3bf166cc29c35f7e489cf3c1ab8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626758154712,
+          "stop" : 1626758157826,
+          "duration" : 3114
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "РџСЂРѕРІРµСЂРёС‚СЊ РЅР°Р»РёС‡РёСЏ Рё РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚Рё СѓРєР°Р·Р°РЅРёСЏ СЃР»РµРґСѓСЋС‰РёС… РєРѕРЅС‚Р°РєС‚РЅС‹С… РґР°РЅРЅС‹С…: +7 (499) 113-68-89 mail@crtweb.ru",
+        "uid" : "17e7dc97ba045614",
+        "parentUid" : "251fb3bf166cc29c35f7e489cf3c1ab8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626758142778,
+          "stop" : 1626758148164,
+          "duration" : 5386
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "251fb3bf166cc29c35f7e489cf3c1ab8"
+    }, {
+      "name" : "3704@DESKTOP-T2PM96F.main(1)",
+      "children" : [ {
+        "name" : "Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru",
+        "uid" : "9c894c86afa68ccc",
+        "parentUid" : "fbfc8c858561317f9ce3259c29b64bed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626758608054,
+          "stop" : 1626758613436,
+          "duration" : 5382
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Перейти на сайт и проверить корректность своего перехода на сайт",
+        "uid" : "578a94791e406c1d",
+        "parentUid" : "fbfc8c858561317f9ce3259c29b64bed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626758619950,
+          "stop" : 1626758623587,
+          "duration" : 3637
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fbfc8c858561317f9ce3259c29b64bed"
+    } ],
+    "uid" : "fbf0e44ebb970d371c8faa8385ff07b7"
+  } ]
+}
