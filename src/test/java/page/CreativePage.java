@@ -1,38 +1,45 @@
 package page;
 
+import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+import static com.codeborne.selenide.Selenide.$;
 
 public class CreativePage {
     protected WebDriver webdriver;
-    @FindBy(xpath = "//input[@type='checkbox']")
-    private WebElement menuHamburger;
-
-    @FindBy(xpath = "//a[contains(text(),'контакты')]")
-    private WebElement contactsList;
 
 
     public CreativePage(WebDriver driver) {
         this.webdriver = driver;
-        PageFactory.initElements(driver, this);
     }
 
     @Step("Нажать на меню сайта креатив")
     public CreativePage clickOnMenu() {
-        menuHamburger.click();
+        $(By.xpath("//input[@type='checkbox']")).click();
         return this;
     }
 
     @Step("Выбрать раздел контакты")
     public CreativePage clickOnContactList() {
-        new WebDriverWait(webdriver, 4).until(ExpectedConditions.visibilityOf(contactsList));
-        contactsList.click();
+        $(By.xpath("//a[contains(text(),'контакты')]")).should(Condition.visible).click();
         return this;
     }
+
+    @Step("Получения текста с раздела контакты")
+    public String getNumber() {
+        return $(By.xpath("//a[normalize-space()='+7 (499) 113-68-89']"))
+                .should(Condition.visible)
+                .getText();
+    }
+    @Step("Получения мейл адреса с раздела контакты")
+    public String getMail() {
+        return $(By.xpath("//a[@class='tn-atom'][normalize-space()='mail@crtweb.ru']"))
+                .should(Condition.visible)
+                .getText();
+    }
+
 
 }

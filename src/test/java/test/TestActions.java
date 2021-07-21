@@ -1,9 +1,10 @@
 package test;
 
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import page.CreativePage;
@@ -17,31 +18,21 @@ public class TestActions{
 
 
 
-
-    @BeforeMethod
-    public void profileSetup() {
-
-       System.setProperty("webdriver.chrome.driver" , "X:/webdrivers/chromedriver.exe");
-        webdriver = new ChromeDriver();
-        GooglePage googlePage = new GooglePage(webdriver);
-        googlePage
-                .openPage();
-        webdriver.manage().window().maximize();
-
-
-    }
-
     @Test(priority = 1,description = "Проверить url сайта")
     @Severity(SeverityLevel.BLOCKER)
     @Description("Перейти на сайт и проверить корректность своего перехода на сайт")
     @Step("Поиск страницы креатив в гугл")
     public void checkIsCorrectWebsite() {
+        Selenide.clearBrowserCookies();
+        Configuration.headless = true;
+        Configuration.clickViaJs = true;
         GooglePage googlePage = new GooglePage(webdriver);
 
         googlePage
+                .openPage()
                 .startSearchByKeyWords()
                 .chooseItemFromSearchResults();
-        String url = webdriver.getCurrentUrl();
+        String url =  WebDriverRunner.getWebDriver().getCurrentUrl();
 
         Assert.assertEquals(url, "https://crtweb.ru/");
 
@@ -61,16 +52,14 @@ public class TestActions{
                 .clickOnMenu()
                 .clickOnContactList();
 
-        Assert.assertEquals(webdriver.findElement(By.xpath("//a[normalize-space()='+7 (499) 113-68-89']")).getText(), "+7 (499) 113-68-89");
-        Assert.assertEquals(webdriver.findElement(By.xpath("//a[@class='tn-atom'][normalize-space()='mail@crtweb.ru']")).getText(), "mail@crtweb.ru");
+
+        Assert.assertEquals(creativePage.getNumber(), "+7 (499) 113-68-89");
+        Assert.assertEquals(creativePage.getMail(), "mail@crtweb.ru");
 
 
     }
 
 
-    @AfterMethod
-    public void reportReady(){
-        webdriver.quit();
-    }
+
 
 }

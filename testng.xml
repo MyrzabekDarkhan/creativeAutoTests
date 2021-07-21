@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite  name="Selenium Tests"   parallel="false" thread-count="5">
+<suite  name="Selenide Tests"   parallel="false" thread-count="5">
     <test name="Regression">
         <classes>
             <class name="test.TestActions"/>
-            <class name="page.GooglePage"/>
-            <class name="page.CreativePage"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
