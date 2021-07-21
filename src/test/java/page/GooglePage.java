@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import static com.codeborne.selenide.Selenide.$;
 
 
-public class GooglePage{
+public class GooglePage {
     private final String HOMEPAGE_URL = "https://www.google.kz/";
     public static WebDriver webDriver;
 
@@ -21,7 +21,7 @@ public class GooglePage{
     }
 
     @Step("Открытие браузер")
-    public GooglePage openPage(){
+    public GooglePage openPage() {
         Selenide.open(HOMEPAGE_URL);
         return this;
     }
@@ -38,7 +38,6 @@ public class GooglePage{
         $(By.xpath("//h3[normalize-space()='Creative']")).should(Condition.visible).click();
         return this;
     }
-
 
 
 }

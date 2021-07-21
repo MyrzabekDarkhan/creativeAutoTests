@@ -1,6 +1,6 @@
 ## installation:
-- docker build -t creativeimage .
-- docker run creativeimage
+- docker build -t <nameofimage> .
+- docker run nameofimage
 
 
 - to see allure run mvn test locally 

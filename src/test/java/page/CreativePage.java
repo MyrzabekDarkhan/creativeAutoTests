@@ -34,6 +34,7 @@ public class CreativePage {
                 .should(Condition.visible)
                 .getText();
     }
+
     @Step("Получения мейл адреса с раздела контакты")
     public String getMail() {
         return $(By.xpath("//a[@class='tn-atom'][normalize-space()='mail@crtweb.ru']"))

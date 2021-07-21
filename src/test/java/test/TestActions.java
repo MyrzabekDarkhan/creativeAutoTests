@@ -11,14 +11,11 @@ import page.CreativePage;
 import page.GooglePage;
 
 
-
-
-public class TestActions{
+public class TestActions {
     WebDriver webdriver;
 
 
-
-    @Test(priority = 1,description = "Проверить url сайта")
+    @Test(priority = 1, description = "Проверить url сайта")
     @Severity(SeverityLevel.BLOCKER)
     @Description("Перейти на сайт и проверить корректность своего перехода на сайт")
     @Step("Поиск страницы креатив в гугл")
@@ -32,13 +29,13 @@ public class TestActions{
                 .openPage()
                 .startSearchByKeyWords()
                 .chooseItemFromSearchResults();
-        String url =  WebDriverRunner.getWebDriver().getCurrentUrl();
+        String url = WebDriverRunner.getWebDriver().getCurrentUrl();
 
         Assert.assertEquals(url, "https://crtweb.ru/");
 
     }
 
-    @Test(priority = 2,description = "Проверить наличия и корректности данных в разделе контакты")
+    @Test(priority = 2, description = "Проверить наличия и корректности данных в разделе контакты")
     @Severity(SeverityLevel.BLOCKER)
     @Description("Проверить наличия и корректности указания следующих контактных данных: +7 (499) 113-68-89 mail@crtweb.ru")
     public void checkForContentInWebSite() {
@@ -58,8 +55,6 @@ public class TestActions{
 
 
     }
-
-
 
 
 }
