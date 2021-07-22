@@ -9,5 +9,5 @@ COPY ./ /tests
 COPY pom.xml /tests
 WORKDIR /tests
 
-RUN ["mvn","clean","test"]
+CMD ["mvn","clean","test"]
 #CMD ["allure","serve", "target/allure-result"]
