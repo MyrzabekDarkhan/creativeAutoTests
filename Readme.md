@@ -1,5 +1,5 @@
 ## installation:
-- docker build -t <nameofimage> .
+- docker build -t nameofimage .
 - docker run nameofimage
 
 
